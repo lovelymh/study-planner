@@ -1,0 +1,26 @@
+.mainpage-wrapper {
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 95vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  font-size: 20px;
+}
+
+.into-user {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: black;
+}
+
+.into-user:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}

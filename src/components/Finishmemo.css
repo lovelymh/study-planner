@@ -1,0 +1,39 @@
+.finishmemo {
+  display: flex;
+  flex-direction: column;
+}
+.finish-memo {
+  display: flex;
+  align-items: center;
+}
+.memo {
+  margin-left: 5px;
+  width: 500px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 3px;
+  color: #495057;
+}
+
+p {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.save-button {
+  margin-left: 10px;
+  border: 1px solid #adb5bd;
+  text-align: center;
+  color: #495057;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.save-button:hover {
+  background-color: #adb5bd;
+}

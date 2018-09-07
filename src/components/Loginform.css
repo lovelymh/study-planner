@@ -1,0 +1,9 @@
+.login-form {
+  display: flex;
+}
+
+.log  {
+    margin-right: 10px;
+    background-color: #bac8ff;
+    cursor: pointer;
+}

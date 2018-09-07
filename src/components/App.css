@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+footer {
+  margin-top: 5px;
+  color: #495057;
+  text-align: center;
+}

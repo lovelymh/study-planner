@@ -1,0 +1,26 @@
+.study-template {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.inputform {
+  display: flex;
+  /* background-color: #eebefa; */
+  /* align-items: center; */
+}
+
+.studytemplate {
+  /* width: 700px; */
+}
+
+p {
+  font-size: 20px;
+  color: #868e96;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}

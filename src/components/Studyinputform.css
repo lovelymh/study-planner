@@ -1,0 +1,36 @@
+.study-input-form{
+  display: flex;
+  margin-bottom: 15px;
+}
+.input {
+  /* flex-grow: 1; */
+  color: #495057;
+  font-size: 15px;
+}
+
+.topic {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.content {
+  width: 300px;
+}
+
+.data {
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #adb5bd;
+  cursor: pointer;
+  background-color: white;
+  color: #495057;
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.data:hover {
+  background-color: #adb5bd;
+}

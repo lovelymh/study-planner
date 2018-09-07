@@ -1,0 +1,52 @@
+.study-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0.3px dotted #adb5bd;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #495057;
+  font-size: 14px;
+  display: flex;
+  min-height: 20px;
+  cursor: pointer;
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.studytopic {
+  width: 100px;
+  border-right: 1px solid #adb5bd;
+}
+
+.studyinput {
+   margin-left: 10px;
+   width: 430px;
+}
+
+study-list input[type="checkbox"]{
+  display: none;
+}
+
+
+.study-list input[type="checkbox"]:after{
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+}
+
+.study-list input[type='checkbox']:checked:after {
+  content: '✔';
+  text-align: center;
+}
+
+.select {
+  color: white;
+  background-color: #adb5bd;
+  font-size: 15px;
+  font-weight: bold;
+  border-right-color: white;
+}

@@ -1,0 +1,53 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 340px;
+  /* height: 100%; */
+  align-items: center;
+}
+
+.timer-time {
+  width: 330px;
+  height: 110px;
+  background-color: #adb5bd;
+  font-size: 80px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.timer-button {
+  display: flex;
+}
+
+.button {
+  margin-left: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #adb5bd;
+  cursor: pointer;
+  background-color: white;
+  color: #495057;
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.button:hover {
+  background-color: #adb5bd;
+}
+
+.none {
+  margin-left: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #adb5bd;
+  background-color: #dee2e6;
+  color: #ced4da;
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}

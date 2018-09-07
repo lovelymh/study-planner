@@ -1,0 +1,9 @@
+.studyinfo {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  border: 0.1px solid #adb5bd;
+  width: 600px;
+  height: 300px;
+  overflow: auto;
+}
