@@ -13,6 +13,8 @@ export const GET_STUDYDATA = 'GET_STUDYDATA';
 export const SET_STUDYCHK = 'SET_STUDYCHK';
 export const RESET_SELECTDATA = 'RESET_SELECTDATA';
 export const GET_STUDYCHK = 'GET_STUDYCHK';
+export const GET_SUBJECT = 'GET_SUBJECT';
+export const GET_DATA = 'GET_DATA';
 
 //TimerContainer
 export const START_TIMER = 'START_TIMER';

@@ -53,8 +53,8 @@ function timer(state = initialState, action) {
           ...state,
           seqid: action.seqid,
           subject: action.subject,
-          resulttime: (action.resulttime==='' ? 0 : resulttime),
-          prettytime: '00:00:00'
+          resulttime: (action.resulttime==='' ? 0 : action.resulttime),
+          prettytime: (action.resulttime==='' ? '00:00:00' : pretty_resulttime(action.resulttime))
         }
       case types.GET_SELECTEDTIMER:
         if(action.seqid||action.seqid===0) {

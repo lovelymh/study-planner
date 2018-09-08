@@ -37,7 +37,18 @@ function studylist(state = initialState, action) {
         ...state,
         studylist: action.studylist
       }
-
+    case types.GET_SUBJECT:
+      return {
+        ...state,
+        seqid: action.seqid,
+        subject: action.subject
+      }
+    case types.GET_DATA:
+      return {
+        ...state,
+        seqid: action.seqid,
+        data: action.data
+      }
     default:
       return state;
   }

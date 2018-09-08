@@ -16,7 +16,9 @@ const mapDispatchToProps = (dispatch) => ({
   onGetdata: (seqid) => dispatch(actions.getstudydata(seqid)),
   onchkClick: (checkedid) => dispatch(actions.setstudychk(checkedid)),
   onResetdata: () => dispatch(actions.reset_selectdata()),
-  getstudychk: () => dispatch(actions.get_studychk())
+  getstudychk: (reset_studylist) => dispatch(actions.get_studychk(reset_studylist)),
+  getsubject: (seqid, subject) => dispatch(actions.get_subject(seqid, subject)),
+  getdata: (seqid, data) => dispatch(actions.get_data(seqid, data)),
 });
 
 const StudylistContainer = connect(

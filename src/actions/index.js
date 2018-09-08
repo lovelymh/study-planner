@@ -13,27 +13,45 @@ export const setstudyinput = (data, selectedid) => ({
   selectedid
 })
 
+export function set_studyinput(data, selectedid) {
+  return (dispatch, getState) => {
+    dispatch(setstudyinput(data, selectedid));
+    const seqid = selectedid;
+    dispatch(get_data(seqid, data)); //selectData 세팅
+  }
+}
+
 export const setstudytopic = (subject, selectedid) => ({
   type: types.SET_STUDYTOPIC,
   subject,
   selectedid
 })
 
+export function set_studytopic(subject, selectedid) {
+  return (dispatch, getState) => {
+    dispatch(setstudytopic(subject, selectedid));
+    const seqid = selectedid;
+    dispatch(get_subject(seqid, subject)); //selectData 세팅
+  }
+}
+
 export const insertstudyinput = (seqid, data) => ({
-  type: types.INSERT_STUDYINPUT,
-  seqid,
-  data
+    type: types.INSERT_STUDYINPUT,
+    seqid,
+    data
 })
 
 export function insert_studyinput(seqid, data) {
   return (dispatch, getState) => {
     dispatch(insertstudyinput(seqid, data));
-    dispatch(reset_selectdata());
-    const selectedid = getState().selectData.seqid;
-    if(selectedid){
+     const selectedid = getState().selectData.seqid;
+     if(selectedid){
       const topic = getState().inputData.studylist.filter(s=> s.id === selectedid)[0].topic;
-      dispatch(set_selectedid(selectedid, topic, ''));
-    }
+      const resulttime = getState().timeData.resulttime;
+       dispatch(set_studytimer(selectedid, resulttime));
+     }
+    dispatch(set_selectedid('', '', ''));
+    dispatch(reset_selectdata());
     const studylist = getState().inputData.studylist;
     dispatch(get_studylist(studylist));
   }
@@ -102,6 +120,18 @@ export const set_studylistchk = (checkedid, studylist) => ({
 
 export const reset_selectdata = () => ({
     type: types.RESET_SELECTDATA
+})
+
+export const get_subject = (seqid, subject) => ({
+    type: types.GET_SUBJECT,
+    seqid,
+    subject
+})
+
+export const get_data = (seqid, data) => ({
+    type: types.GET_DATA,
+    seqid,
+    data
 })
 
 //Timer
