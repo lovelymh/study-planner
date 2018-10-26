@@ -3,9 +3,6 @@ import './App.css';
 import PageTemplate from './PageTemplate';
 import NavList from './NavList';
 import Loginfrom from './Loginform';
-//import Calendar from './Calendar';
-//import Calendar from 'react-calendar';
-//import Calendarcc from 'react-calendar/dist/entry.nostyle';
 
 class App extends Component {
 
@@ -16,7 +13,7 @@ class App extends Component {
           <PageTemplate navlist={(<NavList/>)}
             loginform={(<Loginfrom/>)}
             />
-        </div>  
+        </div>
         <footer>Copyright &copy; lovelymh</footer>
       </div>
     );

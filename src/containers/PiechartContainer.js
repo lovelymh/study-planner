@@ -13,11 +13,9 @@ const mapDispatchToProps = (dispatch) => ({
   getstudylist: (date) => dispatch(actions.get_studylist(date))
 });
 
-// Calendar 컴포넌트의 Container 컴포넌트
-// Calendar 컴포넌트를 어플리케이션의 데이터 레이어와 묶는 역할을 함
-const CalendarContainer = connect(
+const PiechartContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Piechart);
 
-export default CalendarContainer;
+export default PiechartContainer;
